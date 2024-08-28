@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Descentralizado</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CloudBlock</h1>
+
+        <section>
+            <h5>Conta Conectada: <b id="connectConta"></b></h5>
+            <button id="connectButton">Conectar ao MetaMask</button>
+        </section>
+
+        <section>
+            <h2>Upload de Arquivos</h2>
+            <input type="file" id="fileInput" />
+            <button id="uploadButton">Upload</button>
+        </section>
+
+        <section>
+            <h2>Visualizar Arquivos</h2>
+            <button id="viewFilesButton">Ver Arquivos</button>
+            <ul id="fileList"></ul>
+        </section>
+        
+        <section>
+            <h2>Compartilhar Arquivo</h2>
+            <select id="fileSelect">
+                <option value="">Selecione um arquivo</option>
+            </select>
+            <input type="text" id="walletAddress" placeholder="Endereço da Carteira" />
+            <button id="shareButton">Compartilhar</button>
+        </section>
+
+        <section>
+            <h2>Negar Acesso a Arquivo</h2>
+            <select id="fileSelectDisallow">
+                <option value="">Selecione um arquivo</option>
+            </select>
+            <input type="text" id="walletAddressDisallow" placeholder="Endereço da Carteira" />
+            <button id="disallowButton">Negar Acesso</button>
+        </section>
+        
+        <section>
+            <h2>Lista de Acessos</h2>
+            <input type="text" id="accessListAddress" placeholder="Endereço do Usuário" />
+            <button id="getAccessListButton">Visualizar Lista de Acessos</button>
+            <ul id="accessList">
+            </ul>
+        </section>
+        
+
+        <section>
+            <h2>Arquivos Compartilhados Comigo</h2>
+            <button id="viewSharedFilesButton">Ver Arquivos Compartilhados</button>
+            <ul id="sharedFileList"></ul>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
