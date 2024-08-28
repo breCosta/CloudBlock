@@ -1,4 +1,4 @@
-/* Define a fonte base e configurações globais */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -22,7 +22,7 @@ h1 {
     padding: 20px;
 }
 
-/* Estiliza as seções */
+
 section {
     background: #fff;
     padding: 20px;
@@ -31,14 +31,14 @@ section {
     margin-bottom: 20px;
 }
 
-/* Estiliza os títulos de seção */
+
 h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-/* Estiliza os botões */
+
 button {
     background-color: #007bff;
     color: #fff;
@@ -54,7 +54,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Estiliza os campos de entrada e seleção */
+
 input[type="text"], input[type="file"], select {
     width: 100%;
     padding: 10px;
@@ -64,7 +64,6 @@ input[type="text"], input[type="file"], select {
     margin-bottom: 10px;
 }
 
-/* Estiliza as listas */
 ul {
     list-style-type: none;
     padding: 0;
@@ -82,7 +81,7 @@ ul li:nth-child(odd) {
     background: #f9f9f9;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
