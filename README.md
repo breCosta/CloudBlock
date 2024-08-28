@@ -1,6 +1,6 @@
 # CloudBlock
 
-# Ferramentas
+## Ferramentas
 - VSCode 
 - Pinata (API KEY e SECRET API KEY)
 - MetaMask
@@ -31,6 +31,10 @@ No arquivo ..build/contracts/Upload.json copie o valor que está presente no "ab
 Cole na variável contractABI no ../script.js
 
 ![image](https://github.com/user-attachments/assets/cb03c901-b9df-4f5a-b653-1d679c01c50d)
+
+Copie e cole a API KEY e a SECRET API KEY do Pinata na função UploadToPinata presente no ../script.js
+
+![image](https://github.com/user-attachments/assets/a29d2463-d2c1-4dc1-8bdf-f425dc75a36c)
 
 Clique no index.html com o botão direito do mouse e selecione "Open with Live Server" --instale a extensão Live Server no VSCode
 
