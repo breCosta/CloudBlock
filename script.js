@@ -2,113 +2,8 @@ let web3;
 let contract;
 let accounts;
 
-const contractABI = [     {
-  "inputs": [
-    {
-      "internalType": "string",
-      "name": "cid",
-      "type": "string"
-    }
-  ],
-  "name": "add",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
-},
-{
-  "inputs": [
-    {
-      "internalType": "address",
-      "name": "_user",
-      "type": "address"
-    }
-  ],
-  "name": "allow",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
-},
-{
-  "inputs": [
-    {
-      "internalType": "address",
-      "name": "_user",
-      "type": "address"
-    }
-  ],
-  "name": "disallow",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
-},
-{
-  "inputs": [
-    {
-      "internalType": "address",
-      "name": "_user",
-      "type": "address"
-    }
-  ],
-  "name": "display",
-  "outputs": [
-    {
-      "internalType": "string[]",
-      "name": "",
-      "type": "string[]"
-    }
-  ],
-  "stateMutability": "view",
-  "type": "function",
-  "constant": true
-},
-{
-  "inputs": [
-    {
-      "internalType": "address",
-      "name": "_user",
-      "type": "address"
-    }
-  ],
-  "name": "getAccessList",
-  "outputs": [
-    {
-      "components": [
-        {
-          "internalType": "address",
-          "name": "user",
-          "type": "address"
-        },
-        {
-          "internalType": "bool",
-          "name": "acess",
-          "type": "bool"
-        }
-      ],
-      "internalType": "struct Upload.Acesso[]",
-      "name": "",
-      "type": "tuple[]"
-    }
-  ],
-  "stateMutability": "view",
-  "type": "function",
-  "constant": true
-},
-{
-  "inputs": [],
-  "name": "getFilesSharedWithMe",
-  "outputs": [
-    {
-      "internalType": "string[]",
-      "name": "",
-      "type": "string[]"
-    }
-  ],
-  "stateMutability": "view",
-  "type": "function",
-  "constant": true
-}
-];
-const contractAddress = '0xb6bBe1f07DD39b98346c35EdF7F5324D1A40Ba6E';
+const contractABI = //ABI do contrato [ ];
+const contractAddress = //Endereco do contrato gerado apos o truffle migrate;
 
 document.getElementById('connectButton').addEventListener('click', connectWallet);
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
@@ -146,8 +41,8 @@ async function uploadToPinata(file) {
           maxContentLength: 'Infinity', // Definido para lidar com arquivos grandes
           headers: {
               'Content-Type': `multipart/form-data; boundary=${data._boundary}`,
-              'pinata_api_key': '6a25957f41e6249caa54',
-              'pinata_secret_api_key': '1810cc7ed375368a230099284ab453dd92e508e1ae058e4896574180f7f2aa6b'
+              'pinata_api_key': //'',
+              'pinata_secret_api_key': //''
           }
       });
       return res.data;
