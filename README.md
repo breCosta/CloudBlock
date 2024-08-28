@@ -17,4 +17,14 @@ Instale as ferramentas necessárias:
 
 Após isso, em um terminal:
 - ganache
-- 
+![image](https://github.com/user-attachments/assets/3c7ca3ad-4669-4259-becd-cf9a09d97b74)
+Armazene as privates keys geradas, elas serão necessárias para importar na sua carteira no MetaMask
+
+Em outro terminal
+- truffle compile
+- truffle migrate --network development
+![image](https://github.com/user-attachments/assets/5a4e80f9-df3c-4b39-9872-e2d53b3f74d4)
+Copie e cole o endereço do contrato na variavel contractAdress no ../ script.js
+No arquivo ..build/contracts/Upload.json copie o valor que está presente no "abi = [ ...... ]" copie somente o que está entre as chaves.
+Cole na variável contractABI no ../script.js
+
