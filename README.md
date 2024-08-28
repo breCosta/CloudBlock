@@ -26,7 +26,7 @@ Em outro terminal
 
 Copie e cole o endereço do contrato na variavel contractAdress no ../ script.js
 
-No arquivo ..build/contracts/Upload.json copie o valor que está presente no "abi = [ ...... ]" copie somente o que está entre as chaves.
+No arquivo ..build/contracts/Upload.json copie o valor que está presente no "abi = [ ...... ]" copie somente o que está entre os colchetes.
 
 Cole na variável contractABI no ../script.js
 
